@@ -1,0 +1,28 @@
+ SCHEMA custdemo
+
+ LAYOUT 
+    GRID 
+    {
+        Stock_number:   [s01  ]
+        Factory_code:   [s02  ]
+        Description :   [s03                   ]
+        RegularPrice:   [s04     ]
+        Promotion Price:[s05     ]
+        Date update:    [s06         ]Unit:[s07]
+    }
+    END 
+ END
+
+ TABLES 
+    stock
+ END 
+
+ ATTRIBUTES
+ EDIT s01 = stock.stock_num ,REQUIRED;
+ EDIT s02 = stock.fac_code;
+ EDIT s03 = stock.description;
+ EDIT s04 = stock.reg_price;
+ EDIT s05 = stock.promo_price;
+ EDIT s06 = stock.price_updated;
+ COMBOBOX s07 = stock.unit;
+ END 

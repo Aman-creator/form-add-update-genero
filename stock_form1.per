@@ -1,0 +1,18 @@
+ SCHEMA custdemo 
+
+ LAYOUT
+   GRID
+   { 
+     Stock_number#:[s01  ] Factory_code:   [s02  ]
+    }
+    END 
+ END
+
+ TABLES 
+    stock
+ END 
+
+ ATTRIBUTES
+ EDIT s01 = stock.stock_num ,REQUIRED;
+ EDIT s02 = stock.fac_code;
+ END 
